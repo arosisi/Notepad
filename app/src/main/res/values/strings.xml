@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Notepad</string>
+    <string name="change_note">Enter your note</string>
+    <string name="button_add_note">Add note</string>
+    <string name="button_view_notes">View notes</string>
+    <string name="button_save_note">Save note</string>
+    <string name="edit_note">Edit your note</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+    <string name="search_notes">Search notes</string>
+    <string name="image_content">Image</string>
+    <string name="image_sleeping">Cat sleeping</string>
+    <string name="image_yawning">Cat yawning</string>
+    <string name="image_grumpy">Cat grumpy</string>
+    <string name="image_curious">Cat curious</string>
+</resources>

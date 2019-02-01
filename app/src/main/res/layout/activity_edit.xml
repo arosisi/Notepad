@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutEdit"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextEdit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/edit_note"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_save_note"
+        app:layout_constraintEnd_toStartOf="@+id/buttonViewFromEdit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSleepingEdit" />
+
+    <Button
+        android:id="@+id/buttonViewFromEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_view_notes"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonSave" />
+
+    <ImageView
+        android:id="@+id/imageViewSleepingEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_sleeping"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewYawningEdit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutEdit"
+        app:srcCompat="@mipmap/sleeping_round" />
+
+    <ImageView
+        android:id="@+id/imageViewYawningEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_yawning"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewGrumpyEdit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSleepingEdit"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutEdit"
+        app:srcCompat="@mipmap/yawning_round" />
+
+    <ImageView
+        android:id="@+id/imageViewGrumpyEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_grumpy"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCuriousEdit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewYawningEdit"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutEdit"
+        app:srcCompat="@mipmap/grumpy_round" />
+
+    <ImageView
+        android:id="@+id/imageViewCuriousEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/image_curious"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewGrumpyEdit"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutEdit"
+        app:srcCompat="@mipmap/curious_round" />
+</android.support.constraint.ConstraintLayout>

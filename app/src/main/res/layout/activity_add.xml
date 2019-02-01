@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <RelativeLayout
+        android:id="@+id/linearLayoutAdd"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextEnter"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/change_note"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_add_note"
+        app:layout_constraintEnd_toStartOf="@+id/buttonViewFromAdd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSleepingAdd" />
+
+    <Button
+        android:id="@+id/buttonViewFromAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_view_notes"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonAdd" />
+
+    <ImageView
+        android:id="@+id/imageViewSleepingAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_sleeping"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewYawningAdd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutAdd"
+        app:srcCompat="@mipmap/sleeping_round" />
+
+    <ImageView
+        android:id="@+id/imageViewYawningAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_yawning"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewGrumpyAdd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewSleepingAdd"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutAdd"
+        app:srcCompat="@mipmap/yawning_round" />
+
+    <ImageView
+        android:id="@+id/imageViewGrumpyAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/image_grumpy"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewCuriousAdd"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewYawningAdd"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutAdd"
+        app:srcCompat="@mipmap/grumpy_round" />
+
+    <ImageView
+        android:id="@+id/imageViewCuriousAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="@string/image_curious"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewGrumpyAdd"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutAdd"
+        app:srcCompat="@mipmap/curious_round" />
+</android.support.constraint.ConstraintLayout>
